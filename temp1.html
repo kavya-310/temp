@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name{
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function f1(){
+            let v=document.getElementById("name").value
+            //alert(v)
+            if(v<40){
+                msg.innerHTML="Bettter luck next time"
+            }
+            else{
+                msg.innerHTML="Promoted to next level"
+            }
+            //msg.innerHTML=v*v
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="number" id="name" placeholder="Enter score" style="color: aquamarine;" >
+    <button onclick="f1()">SUBMIT</button>
+    <hr>
+    <div id="msg"></div>
+</body>
+</html>
