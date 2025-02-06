@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(e){
+            e.preventDefault();
+            let str="";
+            let a=document.getElementById("num").value
+            for(let i=0;i<=10;i++){
+                str+=`${a} x ${i}=${a*i}<br>`
+            }
+        
+            root.innerHTML =str
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num">
+    <button onclick="f(event)">SUBMIT</button>
+    <div id="root"></div>
+</body>
+</html>
