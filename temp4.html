@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            let name=document.getElementById("name").value
+            let mail=document.getElementById("email").value
+            let psd=document.getElementById("pwd").value
+            let dob=document.getElementById("dob").value
+            msg.innerHTML=`${name}, ${mail}, ${psd}, ${dob}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>New User Signup Form</h1>
+    <input type="text" id="name" placeholder="enter you name" required>
+    <br><br>
+    <input type="text" id="email" placeholder="enter email" required><br><br>
+    <input type="Password" id="pwd" placeholder="enter password" required><br><br>
+    <input type="date" id="dob" required>
+    <br><br>
+    <button onclick="f1()">REGISTER</button>
+    <div id="msg"></div>
+
+</body>
+</html>
