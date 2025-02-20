@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div>
+    <img src="/assests/ball.png" id="ball" width="100px">
+</div> 
+<div>
+    <img src="/assests/bucket.jpg" id="bucket" width="100px">
+</div>
+<!-- <script>
+    ball.style.position="absolute";
+    let t=0;
+    let l=0;
+    function f1(){
+        t++;
+     ball.style.top=t+"px";
+     ball.style.left=l+"px";
+     if(t<500){
+        setTimeout(f1,1)
+     }
+     if(t==500){
+        t=0;
+        l=Math.random()*1000;
+        f1()
+     }
+    }
+    f1()
+</script> -->
+<script>
+    ball.style.position="absolute";
+    let t=0;
+    function f1(){
+        t++;
+     ball.style.top=t+"px";
+     if(t<500){
+        setTimeout(f1,1)
+     }
+    //  if(t==500){
+    //     t=0;
+    //     f1()
+    //  }
+    }
+    f1()
+    bucket.style.position="absolute";
+    bucket.style.bottom="100px"
+
+</script>
+
+</body>
+</html>

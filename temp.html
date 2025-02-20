@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function showdata(){
+            let user=document.getElementById("username").value;
+            let sur=document.getElementById("surname").value;
+            let dob=document.getElementsByName("gender").value;
+            let mob=document.getElementById("mail").value;
+            let pass=document.getElementById("password").value;
+            let date=document.getElementById("date").value;
+            let month=document.getElementById("Month").value;
+            let year=document.getElementById("year").value;
+            alert("your account is created");
+        }
+        </script>
     <style>
 
         .Container{
             margin: auto;
+            
         background-color: white;
         width: 500px;
         height: 600px;
@@ -20,10 +34,11 @@
             justify-content: center;
         }
          .row{
-            display: flex;
-             justify-content:space-around; 
+            /* display: flex;
+             justify-content:space-around;  */
              padding:10px; 
-             justify-content: center;
+             width: 100px;
+             /* justify-content: center; */
         } 
         .row3{
             padding-left:13px;
@@ -32,19 +47,23 @@
             display: flex;
             justify-content: space-between; 
             height: 40px;
-            width: 300px;
-            padding: 10px;       
+            /* width: 20%; */
+            padding: 10px; 
+            margin:1px;      
          
      }
-     select{
+     Month{
+        width: 95%;
+     }
+     .row4 select{
         display: flex;
-        justify-content: center;
         border-radius: 3px;
         border: 2px solid black;
-        width:900px;
-        padding:10px; 
         margin: 10px;
+        padding: 10px;
         height: 40px;
+        width: 300px;
+        font-size: 0.9em;
      }
          input{
             width: 450px;
@@ -57,10 +76,10 @@
         } 
         .g{
             display: flex;
-            justify-content: center;
+            justify-content:space-between;
             border:2px solid black; 
             margin-left:13px;
-            width:150px;
+            width:29%;
             height:40px;
             border-radius: 3px;
         }
@@ -78,6 +97,11 @@
             display: flex;
             justify-content: center;
         }
+        .name{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
     </style>
 </head>
 <body>
@@ -89,9 +113,11 @@
     </div>
     <div class="form">
     <div class="Container">
-    <div class="row">
-    <input type="text" id="username" placeholder="username">
-    <input type="text" id="surname" placeholder="surname"></div>
+        <div class="name">
+                <input style="width: 220px;" type="text" id="username" placeholder="username">
+                <input style="width: 220px;"type="text" id="surname" placeholder="surname">
+                
+        </div>
      <div class="row3">
         <div>Birthday?</div>
         </div>
@@ -161,15 +187,15 @@
         <div class="row">
         <input type="Password" id="password" placeholder="New password"><br>
          </div>
-         <p>People who use oue service may have uploaded your contact information
-            to Facebook.Learn more
+         <p>People who use our service may have uploaded your contact information
+            to Facebook.<a href="#">learn more.</a>
          </p>
          <p>
             By clicking Sign up,you agree to our Trems,Privacy policy and Cookies
             Policy.You may receive SMS Notifications form us and can opt out any time.
          </p>
          <div class="butt">
-            <button>Sign Up</button>
+            <button onclick="showdata()">Sign Up</button>
     </div>
     <div class="b">
         <h2 style="color: blue;">Already have an account?</h2>
